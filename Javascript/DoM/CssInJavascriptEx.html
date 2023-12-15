@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="cssex.css">
+    <script>
+        function add(){
+            var a=parseInt(document.form1.num1.value);
+            var b=parseInt(document.form1.num2.value);
+            document.form1.res.value=(a+b);
+        }
+    </script>
+
+ 
+</head>
+<body>
+
+
+    <form name="form1">
+        number 1:<input type="number" name="num1">
+        number 2: <input type="number" name="num2">
+        Result<input type="number" name="res" >
+        <input type="button" name="btn1" value="Add" onclick="add()">
+        
+    </form>
+    
+</body>
+</html>
